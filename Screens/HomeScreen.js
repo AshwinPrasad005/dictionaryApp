@@ -49,7 +49,7 @@ export default class HomeScreen extends React.Component{
                         word: "Loading...",
                         lexicalCategory : "",
                         examples : [],
-                        defination : "",
+                        definition : "",
                     })
                 }}
                 />
@@ -64,9 +64,9 @@ export default class HomeScreen extends React.Component{
                     <Text style = {styles.title}>Word : {""}</Text>
                     <Text style = {{ fontSize : 18 , marginTop : -30 , marginLeft : 150}}>{this.state.word}</Text>
                     <Text style = {styles.title}>Type : {""}</Text>
-                    <Text style = {{ fontSize : 18 , marginLeft : 100 }}>{this.state.lexicalCategory}</Text>
+                    <Text style = {{ fontSize : 18 , marginTop : -30  ,marginLeft : 150 }}>{this.state.lexicalCategory}</Text>
                     <Text style = {styles.title}>Definition : {""}</Text>
-                    <Text style = {{ fontSize : 18 , marginLeft : 30 }}>{this.state.defination}</Text>
+                    <Text style = {{ fontSize : 18 , marginLeft : 30 }}>{this.state.definition}</Text>
             </View>
         )
     }
